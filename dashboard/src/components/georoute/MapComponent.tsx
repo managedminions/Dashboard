@@ -85,12 +85,12 @@ const MapComponent: React.FC<MapProps> = ({ center, zoom }) => {
                         <Inject services={[Page, Sort, Filter, Group]} />
                     </GridComponent>
                     <div className="flex justify-center mb-3">
-                        <Button label='Add' icon={faPlus} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Add button clicked' } />
-                        <Button label='Edit' icon={faPencil} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Edit button clicked' } />
-                        <Button label='Delete' icon={faTrashCan} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Delete button clicked' } />
-                        <Button label='Import' icon={faUpload} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Import button clicked' } />
-                        <Button label='Start' icon={faPlay} color='Success' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Start button clicked'} />
-                        <Button label='Reset' icon={faStop} color='Danger' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Reset button clicked' } />
+                        <Button label='' icon={faPlus} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Add button clicked' } />
+                        <Button label='' icon={faPencil} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Edit button clicked' } />
+                        <Button label='' icon={faTrashCan} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Delete button clicked' } />
+                        <Button label='' icon={faUpload} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Import button clicked' } />
+                        <Button label='' icon={faPlay} color='Success' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Start button clicked'} />
+                        <Button label='' icon={faStop} color='Danger' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Reset button clicked' } />
                     </div>
                     <div className="text-center">
                         <div role="status" className="invisible">
