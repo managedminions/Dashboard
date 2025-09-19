@@ -39,6 +39,7 @@ const Button: React.FC<ButtonProps> = ({ label, icon, color = 'Default', onClick
               `}
             onClick={onClick}>
             {icon && (<FontAwesomeIcon icon={icon} />)}
+            {label}
         </button>
     );
 };
