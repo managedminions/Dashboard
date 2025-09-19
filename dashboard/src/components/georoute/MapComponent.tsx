@@ -74,15 +74,13 @@ const MapComponent: React.FC<MapProps> = ({ center, zoom }) => {
                             <span className="font-medium">Info: </span>Add or import up to 5 desination addresses and click Start.
                         </div>
                     </div>
-                    <GridComponent className="mb-3" id="addressList" dataSource={addressData} allowPaging={true} allowSorting={true} allowExcelExport={true} allowPdfExport={true}>
+                    <GridComponent className="mb-3" id="addressList" dataSource={addressData} allowSorting={true} allowExcelExport={true} allowPdfExport={true}>
                         <ColumnsDirective>
                             <ColumnDirective field='Name' textAlign='Left' width='100' />
                             <ColumnDirective field='Address' textAlign='Left' width='200' />
                             <ColumnDirective field='City' textAlign='Left' width='100' />
-                            <ColumnDirective field='State' textAlign='Left' width='90' />
-                            <ColumnDirective field='Zip' textAlign='Right' width='90' />
                         </ColumnsDirective>
-                        <Inject services={[Page, Sort, Filter, Group]} />
+                        <Inject services={[Sort, Filter, Group]} />
                     </GridComponent>
                     <div className="flex justify-center mb-3">
                         <Button label='' icon={faPlus} color='Information' onClick={() => document.getElementById('messageBox')!.innerHTML = 'Info: Add button clicked' } />
