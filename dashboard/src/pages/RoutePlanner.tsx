@@ -16,7 +16,7 @@ export default function RoutePlanner() {
             <div className="min-h-screen rounded-2xl border border-gray-200 bg-white px-5 py-7 dark:border-gray-800 dark:bg-white/[0.03] xl:px-10 xl:py-12">
                 <div className="mx-auto w-full text-center">
                     <MapComponent center={initialCenter} zoom={initialZoom} />
-                    <p className="text-sm text-gray-500 dark:text-gray-400 sm:text-base mt-3">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 sm:text-base mt-5">
                         You can render the Map component wherever it's needed in your
                         application. It accepts two props: initialCenter and zoom, which
                         defines the starting view of the map.
