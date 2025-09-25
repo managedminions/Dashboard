@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { ColumnDirective, ColumnsDirective, GridComponent, Group, Inject, Page, Sort, Filter } from '@syncfusion/ej2-react-grids';
+import { ColumnDirective, ColumnsDirective, GridComponent, Group, Inject, Sort, Filter } from '@syncfusion/ej2-react-grids';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -63,7 +63,7 @@ const MapComponent: React.FC<MapProps> = ({ center, zoom }) => {
                     <div
                         className="rounded-3xl"
                         ref={mapRef}
-                        style={{ width: '100%', height: '650px' }} // Set a fixed size for the map container
+                        style={{ width: '100%', height: '550px' }} // Set a fixed size for the map container
                     />
                 </div>
                 <div className="col-span-1">

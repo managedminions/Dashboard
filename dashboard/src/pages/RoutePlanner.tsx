@@ -4,7 +4,7 @@ import MapComponent from "../components/georoute/MapComponent";
 import "../index.css";
 
 export default function RoutePlanner() {
-    const initialCenter: [number, number] = [38.2527, -85.7585]; // London coordinates
+    const initialCenter: [number, number] = [38.2527, -85.7585];
     const initialZoom: number = 6;
     return (
         <div>
@@ -18,8 +18,7 @@ export default function RoutePlanner() {
                     <MapComponent center={initialCenter} zoom={initialZoom} />
                     <p className="text-sm text-gray-500 dark:text-gray-400 sm:text-base mt-5">
                         You can render the Map component wherever it's needed in your
-                        application. It accepts two props: initialCenter and zoom, which
-                        defines the starting view of the map.
+                        application.
                     </p>
                 </div>
             </div>
